@@ -1,0 +1,1155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  justify-content: center;
+  width: 100%;
+}
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(img/main.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 1.2rem 0;
+}
+.navcenter {
+  justify-content: center;
+  display: flex;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-family: sans-serif;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #34d399;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.general_title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.general_title h1 {
+  font-family: Arial;
+  font-size: 4.375rem;
+  margin-top: 80px;
+}
+
+.section_about-us {
+  width: 100%;
+  height: auto;
+  background-color: #121212;
+  background-size: cover;
+  background-position: center;
+  padding: 1.6rem;
+}
+.conteiner_about-us {
+  top: 0;
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+.title_about-us {
+  display: block;
+  height: auto;
+  box-sizing: content-box;
+  padding: 0.35rem;
+}
+
+.title_about-us span {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+  font-weight: 600;
+  color: #10b981;
+  text-align: center;
+}
+
+.text_about-us {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.text_about-us p {
+  padding: 1rem;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  color: #e5e7eb;
+}
+
+.img_about-us {
+  margin: auto;
+  width: 85%;
+  height: 43%;
+  align-items: center;
+  padding: 0;
+}
+
+.img_about-us img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.section_ejemplares {
+  width: 100%;
+  height: auto;
+  background-color: #151515;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+.conteiner_ejemplares {
+  top: 0;
+  width: 75%;
+  padding: 1.4rem;
+  height: auto;
+  margin: auto;
+}
+
+.title_ejemplares {
+  display: block;
+  height: auto;
+  box-sizing: content-box;
+  padding: 0;
+}
+
+.title_ejemplares h3 {
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+.img_ejemplares {
+  width: 100%;
+  height: 28rem;
+  margin: auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 0.7rem;
+}
+.gallery__item--1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.gallery__item--2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.gallery__item--3 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.gallery__item--4 {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  position: relative;
+}
+.gallery__item--5 {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  position: relative;
+}
+.foto4 {
+  filter: brightness(30%);
+}
+.img_conteiner-ejemplares img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.ver-mas {
+  position: absolute;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 5rem;
+  color: #a8afbb;
+  text-align: center;
+  padding: 20% 0;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition: all 0.6s;
+}
+.ver-mas:hover {
+  color: #fff;
+}
+.section_temperamento {
+  width: 100%;
+  height: auto;
+  background-color: #121212;
+  background-size: cover;
+  background-position: center;
+}
+
+.temperamento_box {
+  height: auto;
+  width: 78%;
+  margin: auto;
+  padding: 0.8rem;
+  top: 0;
+}
+
+.temperamento_title {
+  display: block;
+  height: auto;
+  width: 100%;
+  box-sizing: content-box;
+  padding: 1rem;
+}
+
+.temperamento_conteiner {
+  width: 100%;
+  display: flex;
+  height: auto;
+  padding: 1rem 0.3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.temperamento_card {
+  width: 16rem;
+  height: 13.8rem;
+  padding-top: 1.5rem;
+  margin-top: 0.25rem;
+  border-bottom: #10b981 solid;
+  border-radius: 0.5rem;
+
+  /*background-color: #151515;
+  margin: 5px;
+   border-radius: 8px;
+  padding: 10px;*/
+}
+
+.icon-circle_box {
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.icon-circle {
+  margin: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #115e59;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.icon-circle box-icon {
+  margin: auto;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  fill: #10b981;
+}
+
+.temperamento_card h2 {
+  margin: auto;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.temperamento_card p {
+  padding: 0.3rem;
+  font-size: 0.95rem;
+  font-family: sans-serif;
+  font-weight: 150;
+  text-align: center;
+  color: #a8afbb;
+}
+
+.FAQ_section {
+  width: 100%;
+  height: auto;
+  background-color: #151515;
+  background-size: cover;
+  background-position: center;
+  padding: 1.875rem;
+}
+
+.FAQ_box {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0.35rem;
+}
+
+.FAQ_title {
+  display: block;
+  height: auto;
+  box-sizing: content-box;
+  padding: 0.95rem;
+  width: 100%;
+}
+
+.FAQ_title p {
+  margin: auto;
+  font-size: 0.9rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #98a6ad;
+  padding: 0.35rem auto;
+  text-align: center;
+}
+
+.FAQ_body {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 0.3rem;
+  overflow: hidden;
+}
+
+.FAQ_questions {
+  width: 50%;
+  margin: 0;
+  height: 100%;
+  padding: 0.65rem;
+}
+
+.FAQ_question {
+  box-sizing: border-box;
+  height: 6rem;
+  margin: 0.2rem;
+  width: 100%;
+  padding: 0.3rem;
+}
+
+.Q_icon {
+  height: 1.875rem;
+  width: 1.875rem;
+  color: #fff;
+  background-color: #115e59;
+  text-align: center;
+  border-radius: 50%;
+  float: left;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+.FAQ_body h3 {
+  margin-top: 0;
+  margin-left: 3.125rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #e5e7eb;
+  font-family: "Nunito", sans-serif;
+}
+
+.FAQ_body p {
+  margin-left: 3.125rem;
+  font-weight: 400;
+  font-size: 0.781rem;
+  font-family: "Nunito", sans-serif;
+  color: #d1d5db;
+}
+
+.contact_section {
+  width: 100%;
+  height: auto;
+  background-color: #121212;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact_body {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.contact_info {
+  width: 49%;
+  margin: 0;
+  height: 100%;
+  padding: 0.32rem;
+}
+
+.contact_info h2 {
+  padding: 2rem 0 auto auto;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.contact_info h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Nunito";
+  color: #a8afbb;
+  text-align: center;
+}
+
+.wrapper {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: inline-flex;
+}
+
+.wrapper .icon {
+  position: relative;
+  color: #115e59;
+  padding: 0;
+  margin: auto;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 0.875rem;
+  padding: 0.313rem 0.5rem;
+  border-radius: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  bottom: -0.2rem;
+  left: 50%;
+
+  transition: all 0.3s;
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.wrapper .facebook:hover {
+  color: #34d399;
+}
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before {
+  background-color: #121212;
+  color: #34d399;
+}
+
+.wrapper .instagram:hover {
+  color: #34d399;
+}
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before {
+  background-color: #121212;
+  color: #34d399;
+}
+
+.wrapper .gmail:hover {
+  color: #34d399;
+}
+.wrapper .gmail:hover .tooltip,
+.wrapper .gmail:hover .tooltip:before {
+  background-color: #121212;
+  color: #34d399;
+}
+.burger {
+  font-size: 1.2em;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  .general_title {
+    padding: 0;
+    margin: 0;
+    top: 40%;
+  }
+  .general_title h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+  }
+  /* ....................................................................................................................... */
+  .section_about-us {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .conteiner_about-us {
+    top: 0;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .title_about-us {
+    display: block;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    padding: 2rem 0 0 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    font-weight: 600;
+  }
+  .title_about-us span {
+    font-size: 2rem;
+    padding: 0;
+    margin: auto;
+    font-weight: 600;
+  }
+
+  .text_about-us {
+    width: 100%;
+    height: auto;
+    padding: 0.2rem;
+  }
+
+  .text_about-us p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.2rem;
+  }
+
+  .img_about-us {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding: 0.9rem 0;
+  }
+
+  .img_about-us img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  /* ....................................................................................................................... */
+  .section_ejemplares {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .conteiner_ejemplares {
+    top: 0;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .title_ejemplares {
+    height: auto;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  .title_ejemplares h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .img_ejemplares {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* ....................................................................................................................... */
+  .section_temperamento {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .temperamento_box {
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+
+  .temperamento_title {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .temperamento_conteiner {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .temperamento_card {
+    width: 15.625rem;
+    height: 13.3rem;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+
+  .icon-circle_box {
+    height: 3.125rem;
+  }
+  .icon-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: auto;
+  }
+  .temperamento_card h3 {
+    padding: 0.6rem auto;
+    font-size: 1.2rem;
+  }
+
+  .temperamento_card p {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  /* ....................................................................................................................... */
+  .FAQ_section {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .FAQ_box {
+    top: 0;
+    padding: 0;
+    width: 85%;
+    height: auto;
+    margin: auto;
+  }
+
+  .FAQ_title {
+    display: block;
+    height: auto;
+    padding: 0.9rem 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .FAQ_title p {
+    margin: auto;
+    font-size: 1rem;
+    line-height: auto;
+    padding: 0.3rem;
+  }
+  .FAQ_title p br {
+    display: none;
+  }
+  .FAQ_body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+    margin: 0;
+  }
+
+  .FAQ_questions {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .FAQ_question {
+    height: auto;
+    margin: auto;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .Q_box {
+    width: auto;
+    height: 100%;
+  }
+
+  .Q_icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    line-height: 1.7;
+  }
+
+  .FAQ_question h3 {
+    padding-left: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .FAQ_question p {
+    padding-left: 2rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  /* ....................................................................................................................... */
+  .contact_section {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .contact_body {
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 0;
+    width: 85%;
+    height: auto;
+    margin: auto;
+  }
+
+  .contact_info {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .contact_info h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+
+  .contact_info h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding-top: 1rem;
+    height: auto;
+    display: inline-flex;
+    margin: 0;
+  }
+
+  .wrapper .icon {
+    color: #10b981;
+    font-size: 1.9rem;
+  }
+  .tooltip {
+    display: none;
+  }
+  .navcenter {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+  .title {
+    font-size: 2.4rem;
+    padding: 0;
+    margin: auto;
+    font-weight: 600;
+  }
+  .navbar {
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 2.5rem 0;
+  }
+  .navcenter {
+    width: 95%;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+  }
+  .navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+  }
+
+  .general_title {
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .general_title h1 {
+    font-size: 3.5rem;
+    margin-top: 0px;
+  }
+  /* ....................................................................................................................... */
+  .section_about-us {
+    width: 100%;
+    height: auto;
+    padding: 1.6rem;
+  }
+  .conteiner_about-us {
+    width: 85%;
+    height: auto;
+    margin: auto;
+  }
+
+  .title_about-us {
+    height: auto;
+    padding: 0.3rem;
+  }
+  .title_about-us span {
+    font-size: 2.4rem;
+    padding: 0;
+    margin: auto;
+    font-weight: 600;
+  }
+
+  .text_about-us {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .text_about-us p {
+    padding: 0;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    color: #fff;
+  }
+
+  .img_about-us {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .img_about-us img {
+    width: 100%;
+    height: 100%;
+  }
+  /* ....................................................................................................................... */
+  .section_ejemplares {
+    width: 100%;
+    height: auto;
+  }
+
+  .conteiner_ejemplares {
+    top: 0;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .title_ejemplares {
+    height: auto;
+    padding: 0.9rem;
+  }
+
+  .title_ejemplares h3 {
+    font-size: 1.3rem;
+  }
+
+  .img_ejemplares {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+  }
+  .img_conteiner-ejemplares {
+    margin: auto;
+    max-width: 17.18rem;
+  }
+
+  .section_temperamento {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .temperamento_box {
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+
+  .temperamento_title {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .temperamento_conteiner {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .temperamento_card {
+    width: 15.625rem;
+    height: 13rem;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  .icon-circle_box {
+    height: 3.125rem;
+  }
+  .icon-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: auto;
+  }
+  .temperamento_card h2 {
+    margin: 0.6rem auto;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+
+  .temperamento_card p {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  .FAQ_section {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .FAQ_box {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .FAQ_title {
+    display: block;
+    height: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .FAQ_title p {
+    margin: auto;
+    font-size: 0.9rem;
+  }
+
+  .FAQ_body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .FAQ_questions {
+    width: 49%;
+    margin: 0px;
+    height: 100%;
+    padding: 0.4rem;
+  }
+
+  .FAQ_question {
+    height: auto;
+    margin: 1rem auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .Q_icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    line-height: 1.7;
+  }
+
+  .FAQ_question h3 {
+    padding-left: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .FAQ_question p {
+    padding-left: 2rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  .contact_section {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .contact_body {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: 85%;
+    margin: auto;
+  }
+
+  .contact_info {
+    width: 50%;
+    margin: 0px;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .contact_info h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
+  .contact_info h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .wrapper {
+    width: 50%;
+    padding-top: 1rem;
+    height: auto;
+    display: inline-flex;
+    margin: 0;
+  }
+
+  .wrapper .icon {
+    color: #10b981;
+    font-size: 2.2rem;
+  }
+  .tooltip {
+    display: none;
+  }
+}
