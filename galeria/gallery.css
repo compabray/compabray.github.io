@@ -107,9 +107,19 @@
 .img_box {
   margin: 0.5rem;
   display: inline-block;
-  max-width: 16rem;
-  max-height: 16rem;
+  width: 16rem;
+  aspect-ratio: 1;
   background-color: #252525;
+  animation: 1s linear infinite alternate skeleton;
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: #181818;
+  }
+  100% {
+    background-color: #454545;
+  }
 }
 
 .item {
@@ -167,7 +177,7 @@
   }
   .img_box {
     width: 100%;
-    height: auto;
+
     margin: 0.3rem;
   }
 }
@@ -211,7 +221,6 @@
   }
   .img_box {
     width: 45%;
-    height: auto;
     margin: 0.4rem;
   }
 }
