@@ -180,8 +180,8 @@ header {
 .conteiner_ejemplares {
   top: 0;
   width: 75%;
-  padding: 1.4rem;
-  height: auto;
+  /* padding: 2rem; */
+  height: 95%;
   margin: auto;
 }
 
@@ -202,13 +202,13 @@ header {
 }
 
 .img_ejemplares {
-  width: 100%;
-  height: 28rem;
+  width: auto;
+  height: auto;
   margin: auto;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 2fr);
   grid-gap: 0.7rem;
 }
 .gallery__item--1 {
@@ -239,7 +239,7 @@ header {
 .img_conteiner-ejemplares img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .ver-mas {
