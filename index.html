@@ -214,33 +214,14 @@
         <span> <i class="fab fa-instagram"></i></span>
 <div class="tooltip">Instagram</div>
      </a> 
-     <div class="icon gmail" onclick="copyToClipboard('filasbrasilerosdelesteurguay@hotmail.com')" aria-label="Copiar nuestro e-mail"> 
+     <a class="icon gmail" href="mailto:filasbrasilerosdelesteuruguay@hotmail.com" aria-label="Nuestro e-mail"> 
         <span><i class="far fa-envelope"></i></span>
-          <div class="tooltip" id="hotmail">filasbrasilerosdelesteurguay@hotmail.com</div>
-        </div>
+          <div class="tooltip" id="hotmail">filasbrasilerosdelesteuruguay@hotmail.com</div>
+        </a>
       </div>
     
     </div>
-  <script>
-    
-const copyToClipboard = (str)=>{
-  const el = document.createElement('textarea');
-  el.value = str;
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand('copy');
-  document.body.removeChild(el);
 
-  const hotmail = document.getElementById("hotmail");
-  hotmail.innerHTML = "Copiado!";
-
-  setTimeout(function(){
-    hotmail.innerHTML = "filasbrasilerosdelesteurguay@hotmail.com";
-  }, 3000)
-};
-
-  
-  </script>
   </section>
 
   <script src="navbar.js"></script>
